@@ -1,0 +1,378 @@
+/* ------------------------- Fonts CHT-------------------------------------------------- */
+
+@font-face {
+  font-family: 'Rick Sans';
+  src: url('../font/NotoSansTC-Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Rick Sans';
+  src: url('../font/NotoSansTC-Regular.otf') format('opentype');
+  font-weight: 450;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Rick Sans';
+  src: url('../font/NotoSansTC-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* ------------------------- Fonts ENG-------------------------------------------------- */
+:root {
+  --swiper-theme-color: #394048 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+.swiper-slide img{
+  border: 2px solid;
+}
+@font-face {
+  font-family: 'Rick Sans ENG';
+  src: url('../font/Koulen-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+.WrapperMain{
+    position: relative;
+    overflow: hidden;
+}
+
+.FVWrapper{
+  min-height:115vh;
+  overflow: hidden;
+}
+
+.title{
+  color: black;
+  font-size: clamp(3rem, 5vw,6rem);
+  font-family:Rick Sans ENG;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+.inner{
+  font-size: clamp(1.1rem, 1.2vw,1.5rem);
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2.2rem;
+
+}
+.head{
+  z-index: 1;
+}
+
+.FV img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  padding: 0 20rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill {
+text-align: center;
+font-weight: 700;
+}
+.skill p{
+padding: 1rem;
+background-color: black;
+color: #fff;
+border-radius: 10px;
+font-size: clamp(1.1rem, 1.2vw,1.5rem);
+}
+
+.icon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.icon img{
+  width: 60px;
+  padding: .3rem;
+}
+
+.Name{
+  top: 1%;
+  left: 3%;
+  z-index: 2;
+}
+.overlay{
+    position: absolute;
+}
+
+video{
+  width: 100%;
+}
+
+.CGlp02{
+  background: transparent;
+    width: 80%;
+    height: 60vw;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.562));
+    border-radius: 2rem
+}
+
+
+
+.middleContain{
+  max-width: 1000px;
+  text-align: left;
+  font-family: "Rick Sans ENG";
+  font-size: clamp(5rem, 23vw, 8rem);
+  left: 3%;
+  top: 27%;
+  z-index: 2;
+  line-height: clamp(7.5rem, 7vw, 10rem);
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+
+.middleContain p{
+  margin: 0;
+}
+
+
+.wrapper{
+  display:block ;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper p{
+ margin: 0;
+}
+
+.Nav{
+  top: 38%;
+  right: 8%;
+  z-index: 3;
+}
+  
+  .menu-bar {
+    border-radius: 25px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 10px;
+    animation: ease-in-out;
+  }
+  .menu-bar li {
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+  }
+  .menu-bar li:hover {
+    color: black;
+  }
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+  }
+  /* slider setting */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+  
+  .row {
+    margin: -20px 0;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+  }
+  .row .col.x-50 {
+    width: 50%;
+  }
+  .row .col.x-100 {
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .get-in-touch {
+    max-width: 650px;
+    margin: 4% auto;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-50%); */
+  }
+  /* .get-in-touch .title {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 48px;
+  } */
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .note .link {
+    color: #888;
+    text-decoration: none;
+  }
+  .note .link:hover {
+    text-decoration: underline;
+  }
+
+
+ 
+  @media screen and (max-width:1000px){
+    .FV img{
+      transform: translateX(-48%);
+    }
+    .middleContain{
+      text-align: center;
+      top: 50%;
+      color: white;
+      left: 9%;
+    }
+    .Nav{
+      top: 42%;
+      right: 4%;
+    }
+    .CGlp02{
+      height: 100vw;
+    }
+    .flexbox{
+      padding: 0 2rem;
+    }
+  }
